@@ -1,0 +1,50 @@
+@import './variables.scss';
+
+.home-button {
+    margin-bottom: 50px;
+}
+
+.toolbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 450px;
+    margin-top: 20px;
+    padding: 7px;
+
+    #decreaseButton, #increaseButton, #clear {
+        background: none;
+        color: white;
+        border: 1px white solid;
+        border-radius: 10px;
+        font-size: 20px;
+        padding: 5px 10px;
+
+        &:hover {
+            background: white;
+            color: black;
+            transform: scale(1.2);
+            transition: all 200ms;
+        }
+    }
+
+    #sizeButton {
+        color: white;
+        font-size: 25px;
+    }
+
+    #color {
+        background: none;
+        color: black;
+        border: 1px white solid;
+        border-radius: 10px;
+        width: 60px;
+        height: 35px;
+
+        &:hover {
+            transform: scale(1.2);
+            background: white;
+            transition: all 200ms;
+        }
+    }
+}
